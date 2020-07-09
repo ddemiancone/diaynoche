@@ -30,8 +30,8 @@ img {
 .container-sun {
 	width: 200px;
 	height: 200px;
-	top: 10;
-	right: 10;
+	top: 3%;
+	right: 1%;
 	border-radius: 100%;
 	position: absolute;
 	text-align: center;
@@ -48,8 +48,8 @@ img {
 .container-moon {
 	width: 160px;
 	height: 200px;
-	top: 10;
-	left: 80;
+	top: 3%;
+	left: 10%;
 	border-radius: 100%;
 	position: absolute;
 	text-align: center;
@@ -68,8 +68,8 @@ img {
 	position: absolute;
 	width: 560px;
 	height: 200px;
-	top: 45;
-	left: 370;
+	top: 10%;
+	left: 30%;
 	display: flex;
 	opacity: 0;
 	transition: 0.2s linear;
@@ -116,8 +116,8 @@ img {
 .container-clouds {
 	width: 560px;
 	height: 80px;
-	top: 45;
-	left: 125;
+	top: 10%;
+	left: 15%;
 	position: absolute;
 }
 
@@ -179,7 +179,7 @@ img {
 	width: 950px;
 	height: 350px;
 	position: absolute;
-	bottom: 10;
+	bottom: 2%;
 	background-image: url(images/forest.png);
 	background-size: contain;
 	background-position: bottom;
@@ -193,7 +193,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	bottom: 20;
+	bottom: 3%;
 	transition: 0.2s linear;
 	animation-name: plants;
 	animation-duration: 120s;
