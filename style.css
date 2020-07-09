@@ -23,15 +23,15 @@ img {
 	position: relative;
 	transition: 0.2s linear;
 	animation-name: heaven;
-	animation-duration: 120s;
+	animation-duration: 40s;
 	animation-iteration-count: infinite;
 }
 
 .container-sun {
-	width: 200px;
-	height: 200px;
+	width: 20%;
+	height: 35%;
 	top: 3%;
-	right: 1%;
+	right: 3%;
 	border-radius: 100%;
 	position: absolute;
 	text-align: center;
@@ -41,13 +41,13 @@ img {
 	background-position: center;
 	transition: 0.2s linear;
 	animation-name: sun;
-	animation-duration: 120s;
+	animation-duration: 40s;
 	animation-iteration-count: infinite;
 }
 
 .container-moon {
-	width: 160px;
-	height: 200px;
+	width: 15%;
+	height: 35%;
 	top: 3%;
 	left: 10%;
 	border-radius: 100%;
@@ -60,21 +60,21 @@ img {
 	opacity: 0;
 	transition: 0.2s linear;
 	animation-name: moon;
-	animation-duration: 120s;
+	animation-duration: 40s;
 	animation-iteration-count: infinite;
 }
 
 .container-stars {
 	position: absolute;
-	width: 560px;
-	height: 200px;
+	width: 15%;
+	height: 0%;
 	top: 10%;
-	left: 30%;
+	left: 35%;
 	display: flex;
 	opacity: 0;
 	transition: 0.2s linear;
 	animation-name: star;
-	animation-duration: 120s;
+	animation-duration: 40s;
 	animation-iteration-count: infinite;
 }
 
@@ -94,28 +94,28 @@ img {
 }
 
 .star-second {
-	top: 120;
-	left: 80;
+	top: 120px;
+	left: 80px;
 }
 
 .star-third {
-	top: 40;
-	left: 400;
+	top: 40px;
+	left: 400px;
 }
 
 .star-fourth {
-	top: 130;
-	left: 260;
+	top: 130px;
+	left: 260px;
 }
 
 .star-fifth {
-	top: 55;
-	left: 110;
+	top: 55px;
+	left: 110px;
 }
 
 .container-clouds {
-	width: 560px;
-	height: 80px;
+	width: 50%;
+	height: 0%;
 	top: 10%;
 	left: 15%;
 	position: absolute;
@@ -128,18 +128,18 @@ img {
 }
 
 .first-row {
-	left: 0;
+	left: 0%;
 	transition: 0.2s linear;
 	animation-name: first-row-cloud;
-	animation-duration: 120s;
+	animation-duration: 40s;
 	animation-iteration-count: infinite;
 }
 
 .second-row {
-	left: 1000;
+	left: 170%;
 	transition: 0.2s linear;
 	animation-name: second-row-cloud;
-	animation-duration: 120s;
+	animation-duration: 40s;
 	animation-iteration-count: infinite;
 }
 
@@ -154,30 +154,30 @@ img {
 }
 
 .cloud-first {
-	top: 45;
-	left: 10;
+	top: 45px;
+	left: 10px;
 	transform: scaleX(-1);
 }
 
 .cloud-second {
-	top: 105;
-	left: 90;
+	top: 105px;
+	left: 90px;
 }
 
 .cloud-third {
 	top: 0;
-	left: 175;
+	left: 175px;
 	transform: scaleX(-1);
 }
 
 .cloud-fourth {
-	top: 80;
-	left: 270;
+	top: 80px;
+	left: 270px;
 }
 
 .container-forest {
-	width: 950px;
-	height: 350px;
+	width: 85%;
+	height: 50%;
 	position: absolute;
 	bottom: 2%;
 	background-image: url(images/forest.png);
@@ -187,8 +187,8 @@ img {
 }
 
 .container-plants {
-	width: 760px;
-	height: 135px;
+	width: 65%;
+	height: 24%;
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -196,13 +196,13 @@ img {
 	bottom: 3%;
 	transition: 0.2s linear;
 	animation-name: plants;
-	animation-duration: 120s;
+	animation-duration: 40s;
 	animation-iteration-count: infinite;
 }
 
 .plant {
-	width: 115px;
-	height: 135px;
+	width: 15%;
+	height: 100%;
 }
 
 .flower-first {
