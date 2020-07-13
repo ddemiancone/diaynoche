@@ -1,9 +1,3 @@
-@media handheld body {
-	width: 98%;
-	font-family: Verdana;
-	font-size: 16px;
-} 
-
 body {
 	margin: 0;
 	padding: 0;
@@ -11,7 +5,7 @@ body {
 }
 
 img {
-	max-width:100%;
+	max-width: 100%;
 }
 
 .container-all {
@@ -23,7 +17,50 @@ img {
 	position: relative;
 	transition: 0.2s linear;
 	animation-name: heaven;
-	animation-duration: 40s;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+}
+
+.hour {
+	font-family: 'Merriweather';
+	position: absolute;
+	top: 40%
+}
+
+.hour-ten {
+	opacity: 0;
+	animation-name: ten;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+}
+
+.hour-sixteen {
+	opacity: 0;
+	animation-name: sixteen;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+}
+
+.hour-nineteen {
+	opacity: 0;
+	color: white;
+	animation-name: nineteen;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+}
+
+.hour-twentytwo {
+	opacity: 0;
+	color: white;
+	animation-name: twentytwo;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+}
+
+.hour-five {
+	opacity: 0;
+	animation-name: five;
+	animation-duration: 50s;
 	animation-iteration-count: infinite;
 }
 
@@ -41,7 +78,7 @@ img {
 	background-position: center;
 	transition: 0.2s linear;
 	animation-name: sun;
-	animation-duration: 40s;
+	animation-duration: 50s;
 	animation-iteration-count: infinite;
 }
 
@@ -60,7 +97,7 @@ img {
 	opacity: 0;
 	transition: 0.2s linear;
 	animation-name: moon;
-	animation-duration: 40s;
+	animation-duration: 50s;
 	animation-iteration-count: infinite;
 }
 
@@ -74,7 +111,7 @@ img {
 	opacity: 0;
 	transition: 0.2s linear;
 	animation-name: star;
-	animation-duration: 40s;
+	animation-duration: 50s;
 	animation-iteration-count: infinite;
 }
 
@@ -131,7 +168,7 @@ img {
 	left: 0%;
 	transition: 0.2s linear;
 	animation-name: first-row-cloud;
-	animation-duration: 40s;
+	animation-duration: 50s;
 	animation-iteration-count: infinite;
 }
 
@@ -139,7 +176,7 @@ img {
 	left: 170%;
 	transition: 0.2s linear;
 	animation-name: second-row-cloud;
-	animation-duration: 40s;
+	animation-duration: 50s;
 	animation-iteration-count: infinite;
 }
 
@@ -196,7 +233,7 @@ img {
 	bottom: 3%;
 	transition: 0.2s linear;
 	animation-name: plants;
-	animation-duration: 40s;
+	animation-duration: 50s;
 	animation-iteration-count: infinite;
 }
 

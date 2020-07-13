@@ -59,3 +59,48 @@
 	80% { opacity: 0% } 
 	100% { opacity: 0% }
 }
+
+@keyframes ten {
+	0% { opacity: 100% }
+	10% { opacity: 0% }
+	40% { opacity: 0% }
+	60% { opacity: 0% }
+	80% { opacity: 0% }
+	100% { opacity: 100% }
+}
+
+@keyframes sixteen {
+	0% { opacity: 0% }
+	20% { opacity: 100% }
+	30% { opacity: 0% }
+	60% { opacity: 0% }
+	80% { opacity: 0% }
+	100% { opacity: 0% }
+}
+
+@keyframes nineteen {
+	0% { opacity: 0% }
+	20% { opacity: 0% }
+	40% { opacity: 100% }
+	50% { opacity: 0% }
+	80% { opacity: 0% }
+	100% { opacity: 0% }
+}
+
+@keyframes twentytwo {
+	0% { opacity: 0% }
+	20% { opacity: 0% }
+	40% { opacity: 0% }
+	60% { opacity: 100% }
+	70% { opacity: 0% }
+	100% { opacity: 0% }
+}
+
+@keyframes five {
+	0% { opacity: 0% }
+	20% { opacity: 0% }
+	40% { opacity: 0% }
+	60% { opacity: 0% }
+	80% { opacity: 100% }
+	90% { opacity: 0% }
+}
