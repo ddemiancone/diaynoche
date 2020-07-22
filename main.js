@@ -205,7 +205,7 @@ window.onload = function() {
 		}
 	}
 
-	//const stylesByHour = setStylesByHour()
+	const stylesByHour = setStylesByHour()
 
 
 	// RESPUESTA DE API - ACTIVACION DE FUNCIONES - CAMBIO DE ICONO DE CLIMA
