@@ -1,0 +1,321 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container-all {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: relative;
+	transition: 0.2s linear;
+	animation-name: heaven;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.hour {
+	font-family: 'Merriweather';
+	position: absolute;
+	top: 40%
+}
+
+.hour-ten {
+	opacity: 0;
+	animation-name: ten;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.hour-sixteen {
+	opacity: 0;
+	animation-name: sixteen;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.hour-nineteen {
+	opacity: 0;
+	color: white;
+	animation-name: nineteen;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.hour-twentytwo {
+	opacity: 0;
+	color: white;
+	animation-name: twentytwo;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.hour-five {
+	opacity: 0;
+	animation-name: five;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.container-clouds {
+	width: 30%;
+	height: 0%;
+	top: 10%;
+	left: 15%;
+	position: absolute;
+}
+
+.row {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+}
+
+.first-row {
+	left: 0%;
+	transition: 0.2s linear;
+	animation-name: firstrowcloud;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.second-row {
+	left: -200%;
+	transition: 0.2s linear;
+	animation-name: secondrowcloud;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.cloud {
+	position: relative;
+	width: 120px;
+	height: 100px;
+	margin: 0;
+	background: url(images/cloud.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.onecloud-first, .twocloud-first {
+	top: 45px;
+	left: 10px;
+	transform: scaleX(-1);
+}
+
+.onecloud-second, .twocloud-second {
+	top: 105px;
+	left: 90px;
+}
+
+.onecloud-third, .twocloud-third {
+	top: 0;
+	left: 175px;
+	transform: scaleX(-1);
+}
+
+.onecloud-fourth, .twocloud-fourth {
+	top: 80px;
+	left: 270px;
+}
+
+.container-sun {
+	width: 20%;
+	height: 35%;
+	top: 3%;
+	right: 3%;
+	border-radius: 100%;
+	position: absolute;
+	text-align: center;
+	background: url(images/sun.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.2s linear;
+	animation-name: sun;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.container-moon {
+	width: 15%;
+	height: 35%;
+	top: 3%;
+	left: 10%;
+	border-radius: 100%;
+	position: absolute;
+	text-align: center;
+	background: url(images/moon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0;
+	transition: 0.2s linear;
+	animation-name: moon;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.container-stars {
+	position: absolute;
+	width: 15%;
+	height: 0%;
+	top: 10%;
+	left: 35%;
+	display: flex;
+	opacity: 0;
+	transition: 0.2s linear;
+	animation-name: star;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.star {
+	background: url(images/star.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+
+.star-first {
+	top: 0;
+	left: 0;
+}
+
+.star-second {
+	top: 120px;
+	left: 80px;
+}
+
+.star-third {
+	top: 40px;
+	left: 400px;
+}
+
+.star-fourth {
+	top: 130px;
+	left: 260px;
+}
+
+.star-fifth {
+	top: 55px;
+	left: 110px;
+}
+
+
+.container-forest {
+	width: 85%;
+	height: 50%;
+	position: absolute;
+	bottom: 2%;
+	background-image: url(images/forest.png);
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.container-plants {
+	width: 65%;
+	height: 24%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 3%;
+	transition: 0.2s linear;
+	animation-name: plants;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+.plant {
+	width: 15%;
+	height: 100%;
+}
+
+.flower-first {
+	background: url(images/flowerfirst.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.cactus {
+	background: url(images/cactus.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.flower-second {
+	background: url(images/flowersecond.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.plant-first {
+	background: url(images/plant.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.flower-third {
+	background: url(images/flowerthird.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.garden-plant {
+	background: url(images/gardenplant.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.flower-fourth {
+	background: url(images/flowerfourth.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.previous-page {
+	position: absolute;
+  bottom: 2%;
+  right: 0%;
+  width: 8%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-image: url(images/previous.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.container-grass {
+	width: 900px;
+	height: 21px;
+	background-color: #8FDC43;
+	position: absolute;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	bottom: 0;
+}
+

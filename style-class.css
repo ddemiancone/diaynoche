@@ -1,0 +1,56 @@
+/* ESTILOS DE CIELO */
+.heaven-earlymorning { background-color: #625C45; }
+.heaven-morning { background-color: white; }
+.heaven-midday { background-color: #656048; }
+.heaven-afternoon { background-color: #39372D; }
+.heaven-night { background-color: #1D1D20; }
+
+
+/* ESTILOS DE PLANTAS */
+.plants-earlymorning { transform: translateY(30%); }
+.plants-morning { transform: translateY(0%); }
+.plants-midday { transform: translateY(30%); }
+.plants-afternoon { transform: translateY(55%); }
+.plants-night { transform: translateY(100%); }
+
+
+/* ESTILOS DE SOL */
+.sun-earlymorning { transform: translateX(10%); opacity: 20%; }
+.sun-morning { transform: translateX(0%); opacity: 100%; }
+.sun-midday { right: 35%; opacity: 20%; }
+.sun-afternoon { transform: translateX(-300%); opacity: 0%; }
+.sun-night { opacity: 0%; }
+
+
+/* ESTILOS DE LUNA */
+.moon-earlymorning { left: -2%; }
+.moon-morning { left: 10%; opacity: 0%; }
+.moon-midday { left: 10%; opacity: 0%; }
+.moon-afternoon { left: 10%; opacity: 20%; }
+.moon-night { left: 10%; opacity: 100%; }
+
+
+/* ESTILOS DE PRIMERAS NUBES */
+.firstrowcloud-earlymorning { opacity: 0%; }
+.firstrowcloud-morning { left: 0%; }
+.firstrowcloud-midday { left: -68%; }
+.firstrowcloud-afternoon { left: -115%; }
+.firstrowcloud-night { left: -135%; opacity: 0; }
+
+
+/* ESTILOS DE SEGUNDAS NUBES */
+.secondrowcloud-earlymorning { left: 200%; }
+.secondrowcloud-morning { left: -200%; }
+.secondrowcloud-midday { left: 95%; }
+.secondrowcloud-afternoon { left: 40%; }
+.secondrowcloud-night { left: 115%; }
+
+
+/* ESTILOS DE ESTRELLAS */
+.star-earlymorning { opacity: 0%; }
+.star-morning { opacity: 0%; }
+.star-midday { opacity: 0%; }
+.star-afternoon { opacity: 0%; }
+.star-night { opacity: 100%; }
+
+

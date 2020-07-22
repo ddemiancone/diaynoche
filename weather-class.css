@@ -1,0 +1,42 @@
+.temperate {
+	background: url(images/weather/temperate.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.cloudy {
+	background: url(images/weather/cloudy.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sunny {
+	background: url(images/weather/sunny.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.very-cloudy {
+	background: url(images/weather/verycloudy.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.rainy {
+	background: url(images/weather/rainy.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.cloudy-rainy {
+	background: url(images/weather/cloudyrainy.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+

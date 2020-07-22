@@ -1,0 +1,610 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, p{
+	font-family: 'Domine', sans-serif;
+}
+
+audio {
+	position: absolute;
+	left: 0
+}
+
+.container-all {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: relative;
+	transition: 0.2s linear;
+}
+
+.container-weather {
+	width: 20%;
+  height: 22%;
+  border: 2px solid white;
+  background: #505050;
+  position: absolute;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 3px 6px black;
+}
+
+.container-temperature {
+	width: 80%;
+  height: 30%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  text-align: center;
+}
+
+.temperature-text {
+	width: 50%;
+  margin: 0;
+  height: 100%;
+  color: white;
+  font-stretch: extra-condensed;
+  font-size: 40px;
+  transition: 0.2s linear;
+  margin-bottom: 4%;
+}
+
+.temperature-image {
+	width: 35%;
+	height: 120%;
+	transition: 0.2s linear;
+}
+
+.division {
+	width: 80%;
+	height: 2%;
+	background: white;
+	position: absolute;
+	top: 45%;
+}
+
+.container-data {
+	width: 90%;
+  height: 45%;
+  position: absolute;
+  bottom: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.humidity-container {
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+.humidity-image {
+	background: url(images/weather/humidity.png);
+  width: 100%;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.humidity-text {
+	margin: 0;
+  height: 100%;
+  color: white;
+  font-stretch: extra-condensed;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+
+.wind-container {
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+.wind-image {
+	background: url(images/weather/wind.png);
+  width: 100%;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wind-text {
+	margin: 0;
+  height: 100%;
+  color: white;
+  font-stretch: extra-condensed;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+
+.container-sun {
+	width: 30%;
+	height: 35%;
+	top: 3%;
+	right: -3%;
+	border-radius: 100%;
+	position: absolute;
+	text-align: center;
+	transition: 0.2s linear;
+}
+
+.normal-sun {
+	background: url(images/sun.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.radiant-sun {
+	background: url(images/radiant-sun.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container-moon {
+	width: 15%;
+	height: 35%;
+	top: 3%;
+	left: 10%;
+	border-radius: 100%;
+	position: absolute;
+	text-align: center;
+	background: url(images/moon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0;
+	transition: 0.2s linear;
+}
+
+.container-stars {
+	position: absolute;
+	width: 15%;
+	height: 0%;
+	top: 10%;
+	left: 35%;
+	display: flex;
+	opacity: 0;
+	transition: 0.2s linear;
+}
+
+.star {
+	background: url(images/star.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+
+.star-first {
+	top: 0;
+	left: 0;
+}
+
+.star-second {
+	top: 120px;
+	left: 80px;
+}
+
+.star-third {
+	top: 40px;
+	left: 400px;
+}
+
+.star-fourth {
+	top: 130px;
+	left: 260px;
+}
+
+.star-fifth {
+	top: 55px;
+	left: 110px;
+}
+
+.container-clouds {
+	width: 50%;
+	height: 0%;
+	top: 5%;
+	left: 10%;
+	position: absolute;
+}
+
+.row {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+}
+
+.first-row {
+	left: 0%;
+	transition: 0.2s linear;
+}
+
+.second-row {
+	left: 170%;
+	transition: 0.2s linear;
+}
+
+.extra-first-row {
+	left: -35%;
+	transition: 0.2s linear;
+	visibility: hidden;
+}
+
+.extra-second-row {
+	left: 135%;
+	transition: 0.2s linear;
+	visibility: hidden;
+}
+
+.cloud {
+	position: relative;
+	width: 120px;
+	height: 100px;
+	margin: 0;
+	background: url(images/cloud.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.onecloud-first, .twocloud-first, .threecloud-first, .fourcloud-first {
+	top: 45px;
+	left: 10px;
+	transform: scaleX(-1);
+}
+
+.onecloud-second, .twocloud-second, .threecloud-second, .fourcloud-second {
+	top: 105px;
+	left: 90px;
+}
+
+.onecloud-third, .twocloud-third, .threecloud-third, .fourcloud-third  {
+	top: 0;
+	left: 175px;
+	transform: scaleX(-1);
+}
+
+.onecloud-fourth, .twocloud-fourth, .threecloud-fourth, .fourcloud-fourth {
+	top: 80px;
+	left: 270px;
+}
+
+.container-rain {
+	position: absolute;
+  width: 70%;
+  height: 35%;
+  top: 18%;
+  left: 10%;
+}
+
+.rain {
+	width: 75%;
+	height: 50%;
+	position: absolute;
+	display: flex;
+	animation-name: rain;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	display: none;
+	
+}
+
+.rain-one {
+	top: 70%;
+	left: 5%;
+}
+
+.rain-two {
+	top: 70%;
+	left: 5%;	
+}
+
+.rain-three {
+	top: 70%;
+	right: 20%;	
+}
+
+.rain-four {
+	top: 70%;
+	right: 20%;	
+}
+
+.drop {
+	background-image: url(images/drops.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background: white;*/
+	width: 25%;
+  margin: 4;
+  height: 49%;
+}
+
+.container-forest {
+	width: 85%;
+	height: 50%;
+	position: absolute;
+	bottom: 2%;
+	background-image: url(images/forest.png);
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.container-plants {
+	width: 65%;
+	height: 24%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 3%;
+	transition: 0.2s linear;
+}
+
+.plant {
+	width: 15%;
+	height: 100%;
+}
+
+.flower-first {
+	background: url(images/flowerfirst.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.cactus {
+	background: url(images/cactus.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.flower-second {
+	background: url(images/flowersecond.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.plant-first {
+	background: url(images/plant.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.flower-third {
+	background: url(images/flowerthird.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.garden-plant {
+	background: url(images/gardenplant.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.flower-fourth {
+	background: url(images/flowerfourth.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.clock {
+	position: absolute;
+  bottom: 0;
+  left: 15px;
+  width: 8%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hour-minute {
+	font-size: 23px;
+}
+
+.second {
+	font-size: 15px;
+	margin-top: 17%;
+	margin-left: 3%;
+}
+
+.container-grass {
+	width: 80%;
+	height: 4%;
+	background-color: #8FDC43;
+	position: absolute;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.data {
+	font-size: 16px;
+	margin: 0
+}
+
+.animation-noanimation {
+	position: absolute;
+  bottom: 20%;
+  right: 0%;
+  width: 8%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.animation {
+	background-image: url(images/animation.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.noanimation {
+	background-image: url(images/noanimation.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.mute-unmute {
+	position: absolute;
+  bottom: 11%;
+  right: 0%;
+  width: 8%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mute {
+	background: url(images/mute.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.unmute {
+	background: url(images/unmute.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.help {
+	position: absolute;
+  bottom: 2%;
+  right: 0%;
+  width: 8%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/question.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  cursor: pointer;
+}
+
+.help-sign {
+  width: 15%;
+  height: 27%;
+  border: 2px solid white;
+  background-color: gray;
+  right: 1%;
+  bottom: 11%;
+  position: absolute;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  box-shadow: 0 3px 6px black;
+}
+
+.animation-help {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -7%;
+}
+
+.ah-image {
+	width: 20%;
+	height: -1%;
+	margin-right: 5%
+}
+
+.humidity-help {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 26%;
+}
+
+.hh-image {
+	width: 20%;
+	height: -1%;
+	margin-right: 5%
+}
+
+.hh-text, .wh-text, .ah-text {
+	color: white;
+}
+
+.division-help {
+	width: 80%;
+	height: 1%;
+	background: white;
+	position: absolute;
+	top: 34%;
+}
+
+.division2-help {
+	width: 80%;
+	height: 1%;
+	background: white;
+	position: absolute;
+	top: 68%;
+}
+
+
+
+.wind-help {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: -8%;
+}
+
+.wh-image {
+	width: 20%;
+	height: -1%;
+	margin-right: 5%
+}

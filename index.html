@@ -3,42 +3,98 @@
 		<title>Día y noche</title>
 		<meta charset="utf-8">		
 		<link rel="shortcut icon" type="image/x-icon" href="images/moonsun.png">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="style2.css">
+		<link rel="stylesheet" type="text/css" href="style-elements.css">
+		<link rel="stylesheet" type="text/css" href="animations.css">
+		<link rel="stylesheet" type="text/css" href="weather-class.css">
+		<link rel="stylesheet" type="text/css" href="style-class.css">
+		<script type="text/javascript" src="utils.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script src="https://github.com/sweetalert2/sweetalert2"></script>
 	</head>
 
 	<body>
 		
 
 		<div class="container-all">
+			<audio class="audio-wind" loop>
+				<source src="music/wind.mp3" type="audio/mp3">
+			</audio>
 
-			<h1 class="hour hour-ten">10.00 am</h1>
-			<h1 class="hour hour-sixteen">16.00 pm</h1>
-			<h1 class="hour hour-nineteen">19.00 pm</h1>
-			<h1 class="hour hour-twentytwo">22.00 pm</h1>
-			<h1 class="hour hour-five">05.00 am</h1>
-
-
-			<div class="container-sun"></div>
+			<div class="container-weather">
+				<div class="container-temperature">
+					<h1 class="temperature-text">?</h1>
+					<div class="temperature-image"></div>
+				</div>
+				<div class="division"></div>
+				<div class="container-data">
+					<div class="humidity-container">
+						<div class="humidity-image"></div>
+						<h1 class="humidity-text">?</h1>
+					</div>
+					<div class="wind-container">
+						<div class="wind-image"></div>
+						<h1 class="wind-text">?</h1>
+					</div>
+				</div>
+			</div>	
+				
+			<div class="container-sun normal-sun"></div>
 
 			<div class="container-moon"></div>
 
 			<div class="container-clouds">
-
 				<div class="row first-row">
-					<div class="cloud cloud-first"></div>
-					<div class="cloud cloud-second"></div>
-					<div class="cloud cloud-third"></div>
-					<div class="cloud cloud-fourth"></div>
+					<div class="cloud onecloud-first">
+						<div class="rain rain-one">
+							<div class="drop"></div>
+							<div class="drop"></div>
+							<div class="drop"></div>
+						</div>
+					</div>
+					<div class="cloud onecloud-second">
+						<div class="rain rain-two">
+							<div class="drop"></div>
+							<div class="drop"></div>
+							<div class="drop"></div>
+						</div>
+					</div>
+					<div class="cloud onecloud-third">
+						<div class="rain rain-three">
+							<div class="drop"></div>
+							<div class="drop"></div>
+							<div class="drop"></div>
+						</div>
+					</div>
+					<div class="cloud onecloud-fourth">
+						<div class="rain rain-four">
+							<div class="drop"></div>
+							<div class="drop"></div>
+							<div class="drop"></div>
+						</div>
+					</div>
 				</div>
 
 				<div class="row second-row">
-					<div class="cloud cloud-first"></div>
-					<div class="cloud cloud-second"></div>
-					<div class="cloud cloud-third"></div>
-					<div class="cloud cloud-fourth"></div>
+					<div class="cloud twocloud-first"></div>
+					<div class="cloud twocloud-second"></div>
+					<div class="cloud twocloud-third"></div>
+					<div class="cloud twocloud-fourth"></div>
 				</div>
 
+				<div class="row extra-first-row">
+					<div class="cloud threecloud-first"></div>
+					<div class="cloud threecloud-second"></div>
+					<div class="cloud threecloud-third"></div>
+					<div class="cloud threecloud-fourth"></div>
+				</div>
+
+				<div class="row extra-second-row">
+					<div class="cloud fourcloud-first"></div>
+					<div class="cloud fourcloud-second"></div>
+					<div class="cloud fourcloud-third"></div>
+					<div class="cloud fourcloud-fourth"></div>
+				</div>
 			</div>
 
 			<div class="container-stars">
@@ -61,7 +117,37 @@
 				<div class="plant flower-fourth"></div>
 			</div>
 
-			<div class="container-grass"></div>
+			<a href="index-ani.html">
+				<div class="animation-noanimation animation"></div>
+			</a>
+
+			<div class="clock">
+				<h1 class="hour-minute">...</h1>
+				<h1 class="second">...</h1>
+			</div>
+
+			<div class="container-grass">
+				<h1 class="data">Cargando...</h1>
+			</div>
+
+			<div class="mute-unmute mute"></div>
+			<div class="help"></div>
+			<div class="help-sign">
+				<div class="animation-help">
+					<img src="images/animation.png" class="ah-image">
+					<p class="ah-text">Animación</p>
+				</div>
+				<div class="division-help"></div>
+				<div class="humidity-help">
+					<img src="images/weather/humidity.png" class="hh-image">
+					<p class="hh-text">Humedad (%)</p>
+				</div>
+				<div class="division2-help"></div>
+				<div class="wind-help">
+					<img src="images/weather/wind.png" class="wh-image">
+					<p class="wh-text">Viento (%)</p>
+				</div>
+			</div>
 
 		</div>
 

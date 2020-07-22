@@ -1,0 +1,82 @@
+@keyframes heaven {
+	0% { background-color: white } 20% { background-color: #656048 } /*mañana mediodia*/ 
+	40% { background-color: #39372D } 60% { background-color: #1D1D20 } /*tarde noche*/
+	80% { background-color: #625C45 } 100% { background-color: white } /*madrugada mañana*/
+}
+
+
+@keyframes sun {
+	0% { transform: translateX(0%); opacity: 100% } 40% { transform: translateX(-205%); opacity: 0% } /*mañ med*/
+	60% { transform: translateX(-300%); opacity: 0% } 78% { opacity: 0% } /*tar noc*/
+	80% { transform: translateX(10%); opacity: 20% } 100% { transform: translateX(0%); opacity: 100%; } /*mad mañ*/
+}
+
+
+@keyframes moon {
+	0% { left: 10%; opacity: 0% } 20% { left: 10%; opacity: 0% } /*mañ med*/
+	40% { left: 10%; opacity: 0% } 60% { left: 10%; opacity: 100% } /*tar noc*/
+	80% { left: -2% } 85% { opacity: 20% } 100% { left: 10%; opacity: 0% } /*mad mañ*/
+}
+
+
+@keyframes firstrowcloud {
+	0% { left: 0% } 20% { left: -68% } 
+	40% { left: -115% } 60% { left: -135%; opacity: 0 }	
+	80% { opacity: 0% } 100% { left: 0% }
+}
+
+
+@keyframes secondrowcloud {
+	0% { left: -200% } 20% { left: 95% } /*mañ med*/
+	40% { left: 40% } 60% { left: 115%; opacity: 20% } /*tar noc*/
+	80% { left: 200% } 100% { left: -200% } /*mad mañ*/
+}
+
+@keyframes plants {
+	0% { bottom: 3% } 20% { transform: translateY(30%);	}
+	40% { transform: translateY(55%); } 60% { transform: translateY(100%); }
+	80% { transform: translateY(30%); } 100% {	bottom: 3% }
+}
+
+@keyframes star {
+	0% { opacity: 0% } 20% { opacity: 0% }
+	40% { opacity: 0% } 60% { opacity: 100% }
+	80% { opacity: 0% } 100% { opacity: 0% }
+}
+
+@keyframes ten {
+	0% { opacity: 100% } 10% { opacity: 0% }
+	40% { opacity: 0% } 60% { opacity: 0% }
+	80% { opacity: 0% } 100% { opacity: 100% }
+}
+
+@keyframes sixteen {
+	0% { opacity: 0% } 20% { opacity: 100% }
+	30% { opacity: 0% } 60% { opacity: 0% }
+	80% { opacity: 0% } 100% { opacity: 0% }
+}
+
+@keyframes nineteen {
+	0% { opacity: 0% } 20% { opacity: 0% }
+	40% { opacity: 100% } 50% { opacity: 0% }
+	80% { opacity: 0% } 100% { opacity: 0% }
+}
+
+@keyframes twentytwo {
+	0% { opacity: 0% } 20% { opacity: 0% }
+	40% { opacity: 0% } 60% { opacity: 100% }
+	70% { opacity: 0% } 100% { opacity: 0% }
+}
+
+@keyframes five {
+	0% { opacity: 0% } 20% { opacity: 0% }
+	40% { opacity: 0% } 60% { opacity: 0% }
+	80% { opacity: 100% } 90% { opacity: 0% }
+}
+
+@keyframes rain {
+	0% { transform: translateY(0%); } 20% { transform: translateY(900%); } 21% { opacity: 0% }
+	29% { opacity: 0 }
+	30% { transform: translateY(0%) } 
+}
+
